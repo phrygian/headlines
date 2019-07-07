@@ -4,9 +4,10 @@
 	</head>
 	<body>
 		<h1>Headlines</h1>
-		<h2>Current weather</h2>
+		<h2>Current {{ location._name }} weather</h2>
+		<p><img src="{{ icon }}"> | Date(d/m/y)/Time: {{ time }}</p>
 		<p>Temperature: {{ t.temp }}</p>
-		<p>Humidityความชื้น: {{ h }}</p>
+		<p>Humidity: {{ h }}</p>
 		<form>
 			<input type="text" name="publication" placeholder="search" method="POST" />
 			<input type="submit" value="Submit" />
